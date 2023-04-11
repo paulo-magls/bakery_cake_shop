@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: #fff;
+}
+
+:root{
+	--cor-principal: rgb(64, 31, 14);
+	--cor-secundaria: rgb(249, 200, 61);
+}
+
+#containerTop {
+	z-index: 1;
+	width: 100%;
+	position: fixed;
+	padding: 0 8%;
+	background-color: var(--cor-principal);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	left: 0;
+	top: 0;
+}
+
+#headerBox {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+#headerBox img {
+	border-radius: 50%;
+}
+
+#headerBox h1 {
+	color: #fff;
+	font-size: 3em;
+	margin-left: 30px;
+}
+
+#navBox ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+}
+
+#navBox ul li {
+	display: inline;
+}
+
+#navBox ul li a {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.3s;
+	font-size: 1.5em;
+}
+
+#navBox ul li a:hover {
+	box-shadow: inset 0 5px 0 var(--cor-secundaria);
+	color: rgb(249, 200, 61);
+}
+
+.container {
+	margin-top: 195px;
+}
+
+.sectionBox {
+	padding: 30px;
+}
+
+.sectionBox h2 {
+	color: var(--cor-principal);
+	font-size: 2.5em;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.center {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.articleBox {
+	max-width: 500px;
+}
+
+.articleBox h2::before {
+	content: "-";
+	height: 50px;
+	width: 2px;
+	margin-right: 5px;
+	background-color: var(--cor-principal);
+}
+
+.articleBox p {
+	text-align: justify;
+	text-indent: 20px;
+	padding: 10px;
+}
+
+#confeiteiro {
+	max-width: 500px;
+}
+
+.fundoLaranja {
+	background-color: var(--cor-secundaria);
+}
+
+.card {
+	display: flex;
+	max-width: 400px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+}
+
+.card img {
+	max-width: 300px;
+	height: 300px;
+}
+
+.card h2 {
+	margin-top: 10px;
+	color: var(--cor-principal);
+	font-weight: bold;
+}
+
+.card p {
+	margin-top: 10px;
+}
+
+.card a {
+	margin-top: 10px;
+	display: block;
+	border-radius: 20px;
+	text-decoration: none;
+	padding: 20px;
+	background-color: orange;
+	color: var(--cor-principal);
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+#maps {
+	height: 450px;
+	width: 100%;
+}
+
+#sectionProdutos {
+	margin-top: 195px;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+#sectionMidias {
+	margin-top: 195px;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+.audio {
+	width: 80%;
+	margin-bottom: 20px;
+}
+
+.video {
+	width: 80%;
+	height: 510px;
+}
+
+#titulo {
+	color: var(--cor-principal);
+	padding: 10px 10px 10px 30px;
+	background-color: var(--cor-secundaria);
+	margin: 0 60px 30px 60px;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	border-radius: 20px;
+	font-size: 2em;
+	width: 100%;
+}
+
+.produto {
+	text-align: center;
+	border: solid 1px rgb(173, 173, 133);
+	border-radius: 20px;
+	margin: 0 30px 30px 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.produto img {
+	border-radius: 20px;
+}
+
+.produto:hover {
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#footerBox {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	background-color: var(--cor-principal);
+	color: #fff;
+}
+
+/* Mobile */
+@media(max-width: 992px){
+	#headerBox h1 {
+		font-size: 30px;
+	}
+
+	#containerTop {
+		padding: 0;
+	}
+
+	.flex-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.articleBox {
+		padding-bottom: 20px;
+	}
+
+	.video {
+		width: 100%;
+		height: 315px;
+	}
+
+	#navBox ul li a {
+		font-size: 16px;
+	}
+
+	#titulo {
+		margin: 0 30px 30px 30px;
+	}
+}
